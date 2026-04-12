@@ -3,7 +3,7 @@
 A smart camera-based fruit and vegetable freshness detection system.
 
 ## Team
-- Raunak Kumar — ML Lead & Coordinator
+- Raunak Kumar — ML 
 - Sanjana Shibin — Backend
 - Sahana K — Frontend
 - R Supritha — Testing & Documentation
