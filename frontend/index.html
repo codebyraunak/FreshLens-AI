@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,3 +22,106 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshLens AI - Intelligent Freshness Detection</title>
+    <!-- Use Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> FreshLens <span>AI</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="hero-section">
+            <h1 class="hero-title">Scan. Detect. <span class="highlight">Preserve.</span></h1>
+            <p class="hero-subtitle">Upload an image and specify the storage temperature. Our multi-input AI will accurately determine if your produce is fresh, stale, or unripe.</p>
+        </div>
+
+        <div class="app-card glass-panel">
+            <div class="upload-section" id="drop-zone">
+                <input type="file" id="file-input" accept="image/*" hidden>
+                <div class="upload-content" id="upload-content">
+                    <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                    <h3>Drag & Drop or <span class="browse-link">Browse</span></h3>
+                    <p>Supports JPG, PNG</p>
+                </div>
+                <img id="image-preview" class="hidden" alt="Produce Preview">
+            </div>
+
+            <div class="controls-section">
+                <div class="temperature-control">
+                    <label for="temp-slider">
+                        <i class="fa-solid fa-temperature-half"></i> Storage Temperature: <span id="temp-value">20</span>°C
+                    </label>
+                    <input type="range" id="temp-slider" min="-10" max="40" value="20" class="slider">
+                    <div class="temp-markers">
+                        <span>-10°C</span>
+                        <span>0°C</span>
+                        <span>20°C</span>
+                        <span>40°C</span>
+                    </div>
+                </div>
+
+                <button id="analyze-btn" class="primary-btn" disabled>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Analyze Produce
+                </button>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-section" class="result-card glass-panel hidden">
+            <div class="result-header">
+                <h2>Analysis Complete</h2>
+                <div id="status-badge" class="badge">Fresh</div>
+            </div>
+            
+            <div class="result-details">
+                <div class="detail-item">
+                    <span class="detail-label">Detected Item</span>
+                    <span class="detail-value" id="res-item">Apple</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Confidence</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="res-confidence" style="width: 95%;"></div>
+                    </div>
+                    <span class="confidence-text" id="res-confidence-text">95%</span>
+                </div>
+                <div class="detail-item highlight-box">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <div class="box-content">
+                        <span class="detail-label">Estimated Shelf Life</span>
+                        <span class="detail-value highlight" id="res-shelflife">4 - 5 Days</span>
+                        <small id="res-temp-note">At 20°C</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> Stashed changes

@@ -7,7 +7,7 @@ DATASET_PATH = "model/dataset/raw"
 TRAIN_PATH   = "model/dataset/train"
 VAL_PATH     = "model/dataset/val"
 
-SPLIT_RATIO  = 0.8  # 80% train, 20% val
+SPLIT_RATIO  = 0.8  
 
 def split_dataset():
     categories = os.listdir(DATASET_PATH)
